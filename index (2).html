@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TechAsItIs | Understanding the technology shaping our world</title>
+  <meta name="description" content="TechAsItIs explores the systems, research, people and ideas behind the technology shaping how we live and work.">
+  <meta name="theme-color" content="#16102B">
+
+  <!-- Open Graph (replace the image URL with your own share image) -->
+  <meta property="og:title" content="TechAsItIs">
+  <meta property="og:description" content="Understanding the technology shaping our world.">
+  <meta property="og:type" content="website">
+  <!-- Add an og:image tag here once you have real share artwork, e.g.:
+  <meta property="og:image" content="https://YOUR-USERNAME.github.io/YOUR-REPO/images/share-card.jpg"> -->
+
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="logo" href="#top" aria-label="TechAsItIs, home">
+        <img class="logo__img" src="images/logo-black.png" alt="TechAsItIs" width="220" height="61">
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle__label">Menu</span>
+        <span class="nav-toggle__bars" aria-hidden="true"><span></span><span></span></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul class="site-nav__list">
+          <li><a href="#stories">Stories</a></li>
+          <li><a href="#interviews">Interviews</a></li>
+          <li><a href="#podcast">Podcast</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+        <!-- Replace with your channel URL -->
+        <a class="btn btn--primary btn--small" href="https://www.youtube.com/@thetechasitis" target="_blank" rel="noopener">Watch on YouTube</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <h1 id="hero-title" class="hero__title">Understanding the technology shaping our world.</h1>
+          <p class="hero__question">What actually happens behind the technology?</p>
+          <p class="hero__lead">TechAsItIs explores the systems, research, people and ideas behind the technology shaping how we live and work.</p>
+          <div class="btn-row">
+            <a class="btn btn--primary" href="#stories">Explore Stories</a>
+            <a class="btn btn--ghost-light" href="https://www.youtube.com/@thetechasitis" target="_blank" rel="noopener">Watch on YouTube</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FEATURED STORIES ============ -->
+    <section class="section section--paper" id="stories" aria-labelledby="stories-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="stories-title" class="section-title">Featured stories</h2>
+          <a class="text-link" href="#stories">See all stories</a>
+        </div>
+
+        <div class="stories">
+          <article class="story story--lead">
+            <a class="story__link" href="https://open.spotify.com/episode/1frzhXZA0WZVtes5hPSaEx" target="_blank" rel="noopener">
+              <div class="story__media">
+                <img src="images/story-biotech-1.jpg" alt="TechAsItIs episode cover: 37,000 AI agents running a biotech, with host Ursula Paul" width="1200" height="720" loading="lazy">
+              </div>
+              <div class="story__body">
+                <h3 class="story__title">What Happens When an Entire Biotech Company Is Made of AI?</h3>
+                <p class="story__desc">What happens when thousands of specialized AI agents work together across the drug-development process?</p>
+                <span class="story__cta">Listen to the episode</span>
+              </div>
+            </a>
+          </article>
+
+          <!-- No dedicated video/episode yet for Paper2Agent — links to the channel for now. Replace href and image once ready. -->
+          <article class="story">
+            <a class="story__link" href="https://www.youtube.com/@thetechasitis" target="_blank" rel="noopener">
+              <div class="story__media">
+                <div class="media-fallback media-fallback--tint" style="aspect-ratio:4/5" role="img" aria-label="Cover artwork for the Paper2Agent story, coming soon">
+                  <svg viewBox="0 0 48 48" width="52" height="52" aria-hidden="true" focusable="false">
+                    <rect x="10" y="6" width="22" height="30" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+                    <path d="M15 14h12M15 20h12M15 26h7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <circle cx="34" cy="32" r="7" fill="none" stroke="currentColor" stroke-width="2"/>
+                    <path d="M34 28.5v3.5l2.3 2.3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="story__body">
+                <h3 class="story__title">What If a Research Paper Could Talk?</h3>
+                <p class="story__desc">Paper2Agent turns scientific papers into interactive AI agents that can help researchers explore and work with scientific knowledge.</p>
+                <span class="story__cta">Watch on the channel</span>
+              </div>
+            </a>
+          </article>
+
+          <!-- Points to the Spotify creator dashboard link you sent — this may require you to be logged in to Spotify for Creators. Swap in the public open.spotify.com episode link once the episode is live, and its cover image. -->
+          <article class="story">
+            <a class="story__link" href="https://creators.spotify.com/pod/show/1HHHBi0xOHFOLzsYruoPx0/episode/05gxRWZlQo8xe2WylwtBb7/details" target="_blank" rel="noopener">
+              <div class="story__media">
+                <div class="media-fallback media-fallback--dark" style="aspect-ratio:4/5" role="img" aria-label="Cover artwork for the health data story, coming soon">
+                  <svg viewBox="0 0 48 48" width="52" height="52" aria-hidden="true" focusable="false">
+                    <path d="M24 6l16 6v10c0 11-7 17-16 20C15 39 8 33 8 22V12z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                    <circle cx="24" cy="21" r="4" fill="none" stroke="currentColor" stroke-width="2"/>
+                    <path d="M24 25v6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="story__body">
+                <h3 class="story__title">Who Has Access to Your Health Data?</h3>
+                <p class="story__desc">The hidden power of connected data, and who actually gets to see it.</p>
+                <span class="story__cta">Listen to the episode</span>
+              </div>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHAT WE EXPLORE ============ -->
+    <section class="section section--tint" id="explore" aria-labelledby="explore-title">
+      <div class="container">
+        <div class="section-head section-head--stack">
+          <h2 id="explore-title" class="section-title">What we explore</h2>
+        </div>
+
+        <div class="topics">
+          <article class="topic">
+            <svg class="topic__icon" viewBox="0 0 48 48" width="48" height="48" aria-hidden="true" focusable="false">
+              <circle cx="24" cy="24" r="6" fill="currentColor"/>
+              <circle cx="24" cy="24" r="14" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="3 5"/>
+              <circle cx="24" cy="24" r="21" fill="none" stroke="currentColor" stroke-width="2" opacity=".35"/>
+            </svg>
+            <h3 class="topic__title">AI &amp; Emerging Technology</h3>
+            <p class="topic__desc">Understanding what new technologies actually do.</p>
+          </article>
+
+          <article class="topic">
+            <svg class="topic__icon" viewBox="0 0 48 48" width="48" height="48" aria-hidden="true" focusable="false">
+              <path d="M8 40V14m0 26h32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M14 32l9-9 6 5 11-14" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="40" cy="14" r="3" fill="currentColor"/>
+            </svg>
+            <h3 class="topic__title">Research &amp; Innovation</h3>
+            <p class="topic__desc">Breaking down research and the ideas behind it.</p>
+          </article>
+
+          <article class="topic">
+            <svg class="topic__icon" viewBox="0 0 48 48" width="48" height="48" aria-hidden="true" focusable="false">
+              <rect x="6" y="8" width="36" height="8" rx="2" fill="none" stroke="currentColor" stroke-width="2" opacity=".5"/>
+              <rect x="6" y="20" width="36" height="8" rx="2" fill="none" stroke="currentColor" stroke-width="2" opacity=".75"/>
+              <rect x="6" y="32" width="36" height="8" rx="2" fill="currentColor"/>
+            </svg>
+            <h3 class="topic__title">Technology Systems</h3>
+            <p class="topic__desc">Looking underneath the products and platforms we use.</p>
+          </article>
+
+          <article class="topic">
+            <svg class="topic__icon" viewBox="0 0 48 48" width="48" height="48" aria-hidden="true" focusable="false">
+              <circle cx="17" cy="17" r="6" fill="currentColor"/>
+              <circle cx="33" cy="20" r="5" fill="none" stroke="currentColor" stroke-width="2.5"/>
+              <path d="M6 40c0-7 5-12 11-12s11 5 11 12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M32 29c5 0 9 4 10 11" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" opacity=".6"/>
+            </svg>
+            <h3 class="topic__title">People Building the Future</h3>
+            <p class="topic__desc">Conversations with researchers, engineers and builders.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ INTERVIEWS ============ -->
+    <section class="section section--dark" id="interviews" aria-labelledby="interviews-title">
+      <div class="container interviews">
+        <div class="interviews__copy">
+          <h2 id="interviews-title" class="section-title section-title--light">Meet the people building what comes next.</h2>
+          <p class="lead lead--light">TechAsItIs speaks with researchers, engineers, founders and builders to understand the thinking, systems and experiments behind emerging technology.</p>
+          <a class="btn btn--primary" href="#interviews">Explore Interviews</a>
+        </div>
+
+        <div class="portraits" aria-label="Interview guest portraits, coming soon">
+          <figure class="portrait">
+            <div class="media-fallback media-fallback--dark" style="aspect-ratio:3/4" role="img" aria-label="Guest portrait coming soon">
+              <svg viewBox="0 0 48 48" width="40" height="40" aria-hidden="true" focusable="false">
+                <circle cx="24" cy="18" r="8" fill="currentColor"/>
+                <path d="M8 42c0-9 7-16 16-16s16 7 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </figure>
+          <figure class="portrait">
+            <div class="media-fallback media-fallback--brand" style="aspect-ratio:3/4" role="img" aria-label="Guest portrait coming soon">
+              <svg viewBox="0 0 48 48" width="40" height="40" aria-hidden="true" focusable="false">
+                <circle cx="24" cy="18" r="8" fill="currentColor"/>
+                <path d="M8 42c0-9 7-16 16-16s16 7 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </figure>
+          <figure class="portrait">
+            <div class="media-fallback media-fallback--soft" style="aspect-ratio:3/4" role="img" aria-label="Guest portrait coming soon">
+              <svg viewBox="0 0 48 48" width="40" height="40" aria-hidden="true" focusable="false">
+                <circle cx="24" cy="18" r="8" fill="currentColor"/>
+                <path d="M8 42c0-9 7-16 16-16s16 7 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PODCAST ============ -->
+    <section class="section section--paper" id="podcast" aria-labelledby="podcast-title">
+      <div class="container podcast">
+        <div class="podcast__cover">
+          <div class="media-fallback media-fallback--dark" style="aspect-ratio:1/1" role="img" aria-label="Cover art for the TechAsItIs Podcast, coming soon">
+            <svg viewBox="0 0 64 64" width="64" height="64" aria-hidden="true" focusable="false">
+              <rect x="26" y="8" width="12" height="26" rx="6" fill="currentColor"/>
+              <path d="M18 28c0 8 6.3 14 14 14s14-6 14-14" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+              <path d="M32 42v10M25 52h14" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="wave" aria-hidden="true">
+            <span style="--h:30%"></span><span style="--h:55%"></span><span style="--h:80%"></span><span style="--h:45%"></span>
+            <span style="--h:95%"></span><span style="--h:60%"></span><span style="--h:35%"></span><span style="--h:70%"></span>
+            <span style="--h:50%"></span><span style="--h:85%"></span><span style="--h:40%"></span><span style="--h:25%"></span>
+          </div>
+        </div>
+
+        <div class="podcast__copy">
+          <h2 id="podcast-title" class="section-title">TechAsItIs Podcast</h2>
+          <p class="lead">Go beyond the headlines. Hear conversations and stories exploring how technology actually works, who is building it, and what it could mean.</p>
+          <a class="btn btn--dark" href="https://open.spotify.com/show/1HHHBi0xOHFOLzsYruoPx0" target="_blank" rel="noopener">Listen to the Podcast</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section section--tint about" id="about" aria-labelledby="about-title">
+      <div class="container about__inner">
+        <h2 id="about-title" class="about__title">Why TechAsItIs?</h2>
+        <div class="about__text">
+          <p class="about__big">Technology is everywhere.</p>
+          <p>But most of us experience the finished product without seeing the systems, research and decisions that make it possible.</p>
+          <p>TechAsItIs exists to look underneath the surface.</p>
+          <p>We ask one simple question:</p>
+          <p class="about__question">What actually happens behind the technology?</p>
+
+          <div class="about__byline">
+            <img src="images/ursula-paul.jpg" alt="Ursula Paul" width="56" height="56" loading="lazy">
+            <p><strong>Ursula Paul</strong><span>Host, TechAsItIs</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FOLLOW ============ -->
+    <section class="follow" id="follow" aria-labelledby="follow-title">
+      <div class="container follow__inner">
+        <div>
+          <h2 id="follow-title" class="section-title section-title--light">Stay curious.</h2>
+          <p class="lead lead--light">Follow TechAsItIs for stories about the technology shaping our world.</p>
+        </div>
+
+                <ul class="social">
+          <li>
+            <a class="social__link" href="https://www.youtube.com/@thetechasitis" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><rect x="2" y="5" width="20" height="14" rx="4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M10 9l5 3-5 3z" fill="currentColor"/></svg>
+              YouTube
+            </a>
+          </li>
+          <li>
+            <a class="social__link" href="https://www.instagram.com/thetechasitis" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor"/></svg>
+              Instagram
+            </a>
+          </li>
+          <li>
+            <a class="social__link" href="https://www.linkedin.com/company/thetechasitis/" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="3" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 10.5V16M8 7.8v.1M12 16v-5.5m0 2.2c0-1.4 1-2.2 2.2-2.2s1.8.9 1.8 2.2V16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+              LinkedIn
+            </a>
+          </li>
+          <li>
+            <a class="social__link" href="https://open.spotify.com/show/1HHHBi0xOHFOLzsYruoPx0" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><rect x="9" y="3" width="6" height="11" rx="3" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M5.5 11.5a6.5 6.5 0 0013 0M12 18v3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+              Podcast
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section section--paper" id="contact" aria-labelledby="contact-title">
+      <div class="container contact">
+        <h2 id="contact-title" class="section-title">Let's explore what's being built.</h2>
+        <div class="contact__copy">
+          <p class="lead">For research stories, expert interviews, collaborations and media inquiries:</p>
+          <p class="contact__email">Email: <a href="mailto:techasitis.media@gmail.com">techasitis.media@gmail.com</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img class="footer__logo" src="images/logo-white.png" alt="TechAsItIs" width="200" height="55">
+        <p class="footer__tag">Understanding the technology shaping our world.</p>
+      </div>
+      <nav aria-label="Footer">
+        <ul class="footer__links">
+          <li><a href="https://www.youtube.com/@thetechasitis" target="_blank" rel="noopener">YouTube</a></li>
+          <li><a href="https://www.instagram.com/thetechasitis" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.linkedin.com/company/thetechasitis/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://open.spotify.com/show/1HHHBi0xOHFOLzsYruoPx0" target="_blank" rel="noopener">Podcast</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container footer__legal">
+      <p>&copy; <span id="year">2026</span> TechAsItIs. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
