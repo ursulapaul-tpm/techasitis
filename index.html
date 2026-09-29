@@ -14,7 +14,7 @@
   <!-- Add an og:image tag here once you have real share artwork, e.g.:
   <meta property="og:image" content="https://YOUR-USERNAME.github.io/YOUR-REPO/images/share-card.jpg"> -->
 
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%236C3CF0'/%3E%3Cpath d='M8 12h16M8 17h11M8 22h6' stroke='white' stroke-width='2.5' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="icon" type="image/png" href="images/favicon.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,11 +29,7 @@
   <header class="site-header" id="top">
     <div class="container header-inner">
       <a class="logo" href="#top" aria-label="TechAsItIs, home">
-        <svg class="logo__mark" viewBox="0 0 32 32" width="30" height="30" aria-hidden="true" focusable="false">
-          <rect width="32" height="32" rx="8" fill="currentColor"/>
-          <path d="M8 12h16M8 17h11M8 22h6" stroke="#fff" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-        </svg>
-        <span class="logo__text">TechAsItIs</span>
+        <img class="logo__img" src="images/logo-black.png" alt="TechAsItIs" width="220" height="61">
       </a>
 
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
@@ -68,55 +64,6 @@
             <a class="btn btn--ghost-light" href="https://www.youtube.com/@thetechasitis" target="_blank" rel="noopener">Watch on YouTube</a>
           </div>
         </div>
-
-        <!-- The one memorable moment: a finished product, and what runs underneath it -->
-        <figure class="peel" id="peel">
-          <div class="peel__stage">
-            <div class="peel__layer peel__layer--under" id="peel-under" aria-hidden="true">
-              <p class="peel__under-title">What ran in those two seconds</p>
-              <ol class="peel__steps">
-                <li>
-                  <strong>Your words are split into tokens</strong>
-                  <span>Small pieces of text the model can read.</span>
-                </li>
-                <li>
-                  <strong>A model scores what comes next</strong>
-                  <span>Billions of learned weights, one word at a time.</span>
-                </li>
-                <li>
-                  <strong>Sources may be retrieved</strong>
-                  <span>Documents fetched to ground the answer.</span>
-                </li>
-                <li>
-                  <strong>Rules and filters are applied</strong>
-                  <span>Safety checks and formatting before you see it.</span>
-                </li>
-                <li>
-                  <strong>The answer streams back</strong>
-                  <span>Shown to you as a finished sentence.</span>
-                </li>
-              </ol>
-            </div>
-
-            <div class="peel__layer peel__layer--surface" id="peel-surface">
-              <div class="chat" role="img" aria-label="A simplified chat window. A person asks how a vaccine is designed, and an assistant replies with a short summary.">
-                <div class="chat__bar" aria-hidden="true"><i></i><i></i><i></i><span>Assistant</span></div>
-                <div class="chat__body" aria-hidden="true">
-                  <p class="chat__msg chat__msg--user">How does a vaccine get designed?</p>
-                  <p class="chat__msg chat__msg--bot">Researchers start by choosing a target on the pathogen, then test candidates in the lab before any human trial begins. Here's how each stage works.</p>
-                  <p class="chat__msg chat__msg--bot chat__msg--short">Want the short version?</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <figcaption class="peel__caption">
-            <button class="peel__toggle" type="button" aria-controls="peel-under" aria-expanded="false">
-              <span class="peel__toggle-text">Look underneath</span>
-            </button>
-            <span class="peel__note">Simplified illustration</span>
-          </figcaption>
-        </figure>
       </div>
     </section>
 
@@ -312,6 +259,11 @@
           <p>TechAsItIs exists to look underneath the surface.</p>
           <p>We ask one simple question:</p>
           <p class="about__question">What actually happens behind the technology?</p>
+
+          <div class="about__byline">
+            <img src="images/ursula-paul.jpg" alt="Ursula Paul" width="56" height="56" loading="lazy">
+            <p><strong>Ursula Paul</strong><span>Host, TechAsItIs</span></p>
+          </div>
         </div>
       </div>
     </section>
@@ -369,7 +321,7 @@
   <footer class="site-footer">
     <div class="container footer__inner">
       <div class="footer__brand">
-        <p class="footer__name">TechAsItIs</p>
+        <img class="footer__logo" src="images/logo-white.png" alt="TechAsItIs" width="200" height="55">
         <p class="footer__tag">Understanding the technology shaping our world.</p>
       </div>
       <nav aria-label="Footer">

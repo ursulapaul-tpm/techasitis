@@ -11,8 +11,6 @@
 (function () {
   "use strict";
 
-  var prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
   /* 1. Footer year ---------------------------------------------------------- */
   var yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
@@ -88,40 +86,5 @@
     }, { rootMargin: "-45% 0px -50% 0px" });
 
     sections.forEach(function (section) { observer.observe(section); });
-  }
-
-  /* 5. Hero "look underneath" toggle ---------------------------------------- */
-  var peel = document.getElementById("peel");
-  var peelToggle = peel && peel.querySelector(".peel__toggle");
-  var peelLabel = peel && peel.querySelector(".peel__toggle-text");
-  var peelUnder = document.getElementById("peel-under");
-  var peelSurface = document.getElementById("peel-surface");
-  var userTouchedPeel = false;
-
-  function setPeel(open) {
-    peel.classList.toggle("is-open", open);
-    peelToggle.setAttribute("aria-expanded", String(open));
-    peelLabel.textContent = open ? "Back to the surface" : "Look underneath";
-
-    // Only the visible layer is exposed to assistive technology
-    peelUnder.setAttribute("aria-hidden", String(!open));
-    if (open) { peelSurface.setAttribute("inert", ""); } else { peelSurface.removeAttribute("inert"); }
-  }
-
-  if (peel && peelToggle && peelLabel && peelUnder && peelSurface) {
-    setPeel(false);
-
-    peelToggle.addEventListener("click", function () {
-      userTouchedPeel = true;
-      setPeel(!peel.classList.contains("is-open"));
-    });
-
-    // One deliberate moment on load: the surface lifts to show what's underneath.
-    // Skipped for people who prefer reduced motion, or if they've already interacted.
-    if (!prefersReducedMotion) {
-      window.setTimeout(function () {
-        if (!userTouchedPeel) setPeel(true);
-      }, 1800);
-    }
   }
 })();
